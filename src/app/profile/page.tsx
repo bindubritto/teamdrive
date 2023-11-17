@@ -12,8 +12,6 @@ const ProfilePage = async () => {
         <p>{session?.user.name}</p>
         <p>Email:</p>
         <p>{session?.user.email}</p>
-        <p>Role:</p>
-        <p>{session?.user.role}</p>
       </div>
     </div>
   );

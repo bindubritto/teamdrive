@@ -7,7 +7,10 @@ interface Props {
 }
 
 const Providers = (props: Props) => {
-  return <SessionProvider>{props.children}</SessionProvider>;
+
+  return (
+      <SessionProvider >{props.children}</SessionProvider>
+  ) ;
 };
 
 export default Providers;

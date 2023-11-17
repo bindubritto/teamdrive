@@ -1,7 +1,12 @@
 "use client";
 import React from "react";
 import { signIn, signOut, useSession } from "next-auth/react";
+import { Button } from "@/components/ui/button"
 import Image from "next/image";
+
+
+
+
 const SigninButton = () => {
   const { data: session } = useSession();
 
@@ -16,16 +21,13 @@ const SigninButton = () => {
           width={32}
           height={32}
         />
-        <button onClick={() => signOut()} className="text-red-600">
-          Sign Out
-        </button>
+
+        <Button onClick={() => signOut()} className="text-red-600 bg-white">Sign Out</Button>
       </div>
     );
   }
   return (
-    <button onClick={() => signIn()} className="text-green-600 ml-auto">
-      Sign In
-    </button>
+    <Button onClick={() => signIn()} className="text-green-600 ml-auto bg-white">Sign In</Button>
   );
 };
 
