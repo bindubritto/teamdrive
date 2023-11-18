@@ -13,16 +13,10 @@ const Appbar = () => {
 
   if(session && session.user) {
     return (
-      <header className="flex gap-4 p-4 bg-gradient-to-b from-white to-gray-200 shadow ">
-        <Link className="text-gray-800 hover:text-sky-400 transition-colors" href={"/"}>
-          Home
-        </Link>
-        <Link className="text-gray-800 hover:text-sky-400 transition-colors" href={"/profile"}>
-          User Profile
-        </Link>
-        <Link className="text-gray-800 hover:text-sky-400 transition-colors" href={"/admin"}>
-          Admin Dashboard
-        </Link>
+      <header className="flex gap-4 p-4 shadow justify-between ">
+        <Link className="text-[#5f9ea0] hover:text-sky-400 transition-colors" href={"/"}>
+        youstud.
+      </Link>
   
         <SigninButton />
       </header>
@@ -30,9 +24,9 @@ const Appbar = () => {
   }
 
   return (
-    <header className="flex gap-4 p-4 bg-gradient-to-b from-white to-gray-200 shadow ">
-      <Link className="text-gray-800 hover:text-sky-400 transition-colors" href={"/"}>
-        Home
+    <header className="flex gap-4 p-4 shadow justify-between">
+      <Link className="text-[#5f9ea0] hover:text-sky-400 transition-colors" href={"/"}>
+        youstud.
       </Link>
       <SigninButton />
     </header>

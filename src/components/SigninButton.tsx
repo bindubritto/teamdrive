@@ -13,21 +13,12 @@ const SigninButton = () => {
   if (session && session.user) {
     return (
       <div className="flex gap-4 ml-auto items-center">
-        <p className="text-sky-600">{session.user.name}</p>
-        <Image
-          src={session.user.image ?? ""}
-          alt={session.user.name ?? ""}
-          className=" rounded-full"
-          width={32}
-          height={32}
-        />
-
-        <Button onClick={() => signOut()} className="text-red-600 bg-white">Sign Out</Button>
+        <Button onClick={() => signOut()} className="">Sign Out</Button>
       </div>
     );
   }
   return (
-    <Button onClick={() => signIn()} className="text-green-600 ml-auto bg-white">Sign In</Button>
+    <Button onClick={() => signIn()} className="">Sign In</Button>
   );
 };
 
